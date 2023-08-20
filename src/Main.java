@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -59,7 +61,13 @@ public class Main {
         System.out.println();
 
         // Задача 4
+        array1 [0] = array1 [0] + 1;
+        array1 [2] = array1 [2] + 1;
+        System.out.println(Arrays.toString(array1));
 
-
+        {
+            for (int i = array1[0]; i <= array1 [array1.length - 1]; i++) {
+            }
+        }
     }
 }
