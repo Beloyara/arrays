@@ -16,6 +16,8 @@ public class Main {
         for (int i = 0; i < weights.length; i++) {
             System.out.println(weights[i]);
         }
+        System.out.println();
+
 
         // Задача 1 и 2
 
@@ -26,48 +28,57 @@ public class Main {
         int array1Value2 = array1[1];
         array1 [2] = 3;
         int array1Value3 = array1[2];
-        System.out.print(array1[0] + ", ");
-        System.out.print(array1[1] + ", ");
-        System.out.print(array1[2]);
+        for (int i = 0; i < array1.length; i++)
+        {
+            System.out.print(array1[i] + ", ");
+        }
         System.out.println();
 
         double [ ] array2 = {1.57, 7.654, 9.986};
-        System.out.print(array2[0] + ", ");
-        System.out.print(array2[1] + ", ");
-        System.out.print(array2[2]);
+        for (double i = 0; i < array2.length; i++)
+        {
+            System.out.printf(array2[i] + ", ");
+        }
         System.out.println();
 
+
         double [ ] price = {17.15, 19.36, 18.76};
-        System.out.print(price[0] + ", ");
-        System.out.print(price[1] + ", ");
-        System.out.print(price[2]);
+        for (double i = 0; i < price.length; i++)
+        {
+            System.out.print(price[i] + ", ");
+        }
+        System.out.println();
         System.out.println();
 
         // Задача 3
 
-        System.out.print(array1[2] + ", ");
-        System.out.print(array1[1] + ", ");
-        System.out.print(array1[0]);
+        for (int i = array1 [array1.length - 1]; i < array1.length; i--);
+        {
+            System.out.print(array1[i] + ", ");
+        }
         System.out.println();
 
-        System.out.print(array2[2] + ", ");
-        System.out.print(array2[1] + ", ");
-        System.out.print(array2[0]);
+        for (int i = array2 [array2.length - 1]; i < array2.length; i--);
+        {
+            System.out.print(array2[i] + ", ");
+        }
         System.out.println();
 
-        System.out.print(price[2] + ", ");
-        System.out.print(price[1] + ", ");
-        System.out.print(price[0]);
+        for (int i = price [price.length - 1]; i < price.length; i--);
+        {
+            System.out.print(array1[i] + ", ");
+        }
         System.out.println();
+        System.out.println();
+
 
         // Задача 4
-        array1 [0] = array1 [0] + 1;
-        array1 [2] = array1 [2] + 1;
-        System.out.println(Arrays.toString(array1));
-
+        for (int i = array1 [array1.length - 1]; i < array1.length; i--)
         {
-            for (int i = array1[0]; i <= array1 [array1.length - 1]; i++) {
+            if (array1 [i] % 2 == 0) {
+                array1 [i] = array1 [i] + 1;
             }
+            System.out.println(Arrays.toString(array1));
         }
     }
 }
